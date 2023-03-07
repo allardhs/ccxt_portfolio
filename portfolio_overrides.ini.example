@@ -1,0 +1,24 @@
+##################################################
+#
+# Override assets here, in case CCXT does not recognize your exchange, you hold offline assets, or for any other reasons you like to add any values to your crypto holdings
+# Use # to comment out a line
+#
+# Use format:
+#
+# [crypto]
+# exhange_A: { "ETH": 0.1, "BTC": 0.01, "XRP": 0.1 }
+# exhange_B: { "BTC": 0.001 }
+#
+# [fiat]
+# exhange_A: { "USD": 5, "CHF": 10 }
+# exhange_B: { "USD": 1, "EUR": 20 }
+#
+##################################################
+
+[crypto]
+binance: { "BTC": 2.34 }
+kraken: { "USDT": 34.5, "ETH": 2.34, "BTC": 1.23 }
+#kraken: { "XRP": 123.34567 }
+
+[fiat]
+#binance: { "EUR": 0 }

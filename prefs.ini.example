@@ -1,0 +1,33 @@
+##################################################
+#
+# Preferences
+# Use # to comment out a line
+#
+# [prefs]
+# base_currency: EUR (optional, default: EUR)
+# price_history_in_days: 7 (optional, default: 7)
+#
+##################################################
+
+[prefs]
+base_currency: EUR
+price_history_in_days: 7
+
+##################################################
+#
+# Paths
+# Use # to comment out a line
+#
+# [paths]
+# json_output_path: /var/www/html/portfolios/ (required)
+# presearch_json_path: /var/www/html/portfolios/ (optional)
+#
+# where
+# 	json_output_path is the path where the file crypto_portfolio.txt is generated into by the main script
+#	presearch_json_path is the path where your presearch script leaves your scores.txt, for processing and addition to your cryptoassets
+#
+##################################################
+
+[paths]
+json_output_path: /var/www/html/portfolios/
+presearch_json_path: /var/www/html/portfolios/

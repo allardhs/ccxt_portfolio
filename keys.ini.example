@@ -1,0 +1,25 @@
+##################################################
+#
+# Add api keys, secrets, etc. here
+# Use # to comment out a line
+#
+# Use format:
+#
+# [exchange]
+# api_key: XXX (required)
+# secret: YYY (optional, depending on exchange)
+# password: ZZZ (optional, depending on exchange)
+#
+##################################################
+
+#[binance]
+#api_key: AAA
+#secret: BBB
+
+[coinbase]
+api_key: CCC
+secret: DDD
+
+[gateio]
+api_key: EEE
+secret: FFF
