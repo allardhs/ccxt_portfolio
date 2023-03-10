@@ -12,8 +12,11 @@
 import os, sys, getopt, json, traceback
 from datetime import datetime
 
-# subscripts
-#from preferences import prefs, paths, credentials, portfolio_override
+# set script path
+try:
+    SCRIPT_PATH = os.path.dirname(__file__) + os.sep
+except NameError :
+    SCRIPT_PATH = os.getcwd()
 
 # tool to parse ini files
 from configparser import ConfigParser
@@ -90,7 +93,7 @@ for opt, arg in opts :
 """ parse config ini files """
 
 config = ConfigParser()
-config.read( 'keys.ini' )
+config.read( SCRIPT_PATH + 'keys.ini' )
 credentials = {}
 for each_section in config.sections() :
     credentials[ each_section ] = {}
@@ -99,7 +102,7 @@ for each_section in config.sections() :
 #print( json.dumps( credentials, indent=2 ) )
 
 config = ConfigParser()
-config.read( 'prefs.ini' )
+config.read( SCRIPT_PATH + 'prefs.ini' )
 prefs = {}
 for each_section in config.sections() :
     prefs[ each_section ] = {}
@@ -108,7 +111,7 @@ for each_section in config.sections() :
 #print( json.dumps( prefs, indent=2 ) )
 
 config = ConfigParser()
-config.read( 'portfolio_overrides.ini' )
+config.read( SCRIPT_PATH + 'portfolio_overrides.ini' )
 portfolio_override = {}
 for each_section in config.sections() :
     portfolio_override[ each_section ] = {}
