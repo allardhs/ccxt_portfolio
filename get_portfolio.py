@@ -312,7 +312,8 @@ for exchange_id in credentials :
 
 """" merge overriding inputs from preferences """
 
-if prefs[ "paths" ][ 'presearch_json_path' ] and prefs[ "paths" ][ 'presearch_json_path' ].strip() :
+#if prefs[ "paths" ][ 'presearch_json_path' ] and prefs[ "paths" ][ 'presearch_json_path' ].strip() :
+if 'presearch_json_path' in prefs[ "paths" ] :
     
     with open( prefs[ "paths" ][ 'presearch_json_path' ] + 'scores.txt') as json_file :
         data = json.load(json_file)
